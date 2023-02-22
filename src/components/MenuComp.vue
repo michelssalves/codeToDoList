@@ -51,7 +51,7 @@
         const sameName = (t) => t.name === task.name;
         //aplica um filtro para nao inserir duplicado rever
         const reallyNew = this.tasks.filter(sameName).length == 0;
-        if (reallyNew && this.name != undefined) {
+        if (reallyNew ) {
           console.log(this.name)
           this.tasks.push({
             name: task.name,
@@ -97,4 +97,5 @@
     font-weight: 300;
     font-size: 3rem;
   }
+  
   </style>
