@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Menu from '../components/MenuComp.vue'
+import Menu from '../App.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +9,10 @@ const routes = [
     path: '/',
     name: 'Menu',
     component: Menu
+  },
+  {
+    path: "*",
+    redirect: "/Menu",
   },
 ]
 
